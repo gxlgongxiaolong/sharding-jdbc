@@ -1,0 +1,21 @@
+CREATE TABLE `signpdf_202001` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `app_name` varchar(100) NOT NULL,
+  `create_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE signpdf_202002 LIKE signpdf_202001;
+CREATE TABLE signpdf_202003 LIKE signpdf_202001;
+CREATE TABLE signpdf_202004 LIKE signpdf_202001;
+CREATE TABLE signpdf_202005 LIKE signpdf_202001;
+CREATE TABLE signpdf_202006 LIKE signpdf_202001;
+CREATE TABLE signpdf_202007 LIKE signpdf_202001;
+CREATE TABLE signpdf_202008 LIKE signpdf_202001;
+CREATE TABLE signpdf_202009 LIKE signpdf_202001;
+CREATE TABLE signpdf_202010 LIKE signpdf_202001;
+CREATE TABLE signpdf_202011 LIKE signpdf_202001;
+CREATE TABLE signpdf_202012 LIKE signpdf_202001;
+
