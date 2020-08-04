@@ -24,7 +24,7 @@
         <sharding:sharding-rule data-source-names="esigndb">
             <sharding:table-rules>
                 <sharding:table-rule logic-table="signpdf_202001"
-                                     actual-data-nodes="esigndb.signpdf_20200$->{1..9},esigndb.signpdf_2020$->{10..12}"
+                                     actual-data-nodes="esigndb.signpdf_$->{2020..9999}0$->{1..9},esigndb.signpdf_$->{2020..9999}$->{10..12}"
                                      table-strategy-ref="signPdfTableShardingAlgorithm"/>
             </sharding:table-rules>
             <sharding:binding-table-rules>
@@ -32,7 +32,7 @@
             </sharding:binding-table-rules>
         </sharding:sharding-rule>
         <sharding:props>
-            <prop key="show.sql">true</prop>
+            <prop key="sql.show">true</prop>
         </sharding:props>
     </sharding:data-source>
 

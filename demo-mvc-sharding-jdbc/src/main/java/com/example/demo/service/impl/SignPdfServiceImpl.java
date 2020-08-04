@@ -6,6 +6,7 @@ import com.example.demo.service.SignPdfService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,7 +25,9 @@ public class SignPdfServiceImpl implements SignPdfService {
     }
 
     @Override
-    public List<SignPdf> queryAll(String appName, String startTime, String endTime) {
-        return signPdfMapper.queryAll(appName, startTime, endTime);
+    public List<SignPdf> queryAll(String appName, Date startT, Date endT, Date time) {
+        return signPdfMapper.queryAll(appName, startT, endT, time);
     }
+
+
 }
